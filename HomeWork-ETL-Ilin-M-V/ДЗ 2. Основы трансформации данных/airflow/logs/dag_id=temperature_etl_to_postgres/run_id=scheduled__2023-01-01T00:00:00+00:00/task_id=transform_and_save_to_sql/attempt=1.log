@@ -1,0 +1,240 @@
+[2026-02-09T23:37:43.088+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-09T23:37:43.115+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: temperature_etl_to_postgres.transform_and_save_to_sql scheduled__2023-01-01T00:00:00+00:00 [queued]>
+[2026-02-09T23:37:43.121+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: temperature_etl_to_postgres.transform_and_save_to_sql scheduled__2023-01-01T00:00:00+00:00 [queued]>
+[2026-02-09T23:37:43.122+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-02-09T23:37:43.132+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_and_save_to_sql> on 2023-01-01 00:00:00+00:00
+[2026-02-09T23:37:43.141+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'temperature_etl_to_postgres', 'transform_and_save_to_sql', 'scheduled__2023-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/temperature_etl.py', '--cfg-path', '/tmp/tmptv7bgrnb']
+[2026-02-09T23:37:43.143+0000] {standard_task_runner.py:91} INFO - Job 2: Subtask transform_and_save_to_sql
+[2026-02-09T23:37:43.143+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=35) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-09T23:37:43.144+0000] {standard_task_runner.py:64} INFO - Started process 52 to run task
+[2026-02-09T23:37:43.213+0000] {task_command.py:426} INFO - Running <TaskInstance: temperature_etl_to_postgres.transform_and_save_to_sql scheduled__2023-01-01T00:00:00+00:00 [running]> on host ffb9487abbe3
+[2026-02-09T23:37:43.291+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='temperature_etl_to_postgres' AIRFLOW_CTX_TASK_ID='transform_and_save_to_sql' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:00:00+00:00'
+[2026-02-09T23:37:43.292+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-09T23:37:43.533+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-09T23:37:43.534+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3791, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 152, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 181, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'temperature'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/temperature_etl.py", line 17, in transform_and_save_to_sql
+    lower = df['temperature'].quantile(0.05)
+            ~~^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/frame.py", line 3893, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3798, in get_loc
+    raise KeyError(key) from err
+KeyError: 'temperature'
+[2026-02-09T23:37:43.551+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=temperature_etl_to_postgres, task_id=transform_and_save_to_sql, run_id=scheduled__2023-01-01T00:00:00+00:00, execution_date=20230101T000000, start_date=20260209T233743, end_date=20260209T233743
+[2026-02-09T23:37:43.562+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 2 for task transform_and_save_to_sql ('temperature'; 52)
+[2026-02-09T23:37:43.599+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-09T23:37:43.615+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-09T23:37:43.618+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-09T23:42:34.197+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-09T23:42:34.223+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: temperature_etl_to_postgres.transform_and_save_to_sql scheduled__2023-01-01T00:00:00+00:00 [queued]>
+[2026-02-09T23:42:34.229+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: temperature_etl_to_postgres.transform_and_save_to_sql scheduled__2023-01-01T00:00:00+00:00 [queued]>
+[2026-02-09T23:42:34.230+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-02-09T23:42:34.242+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_and_save_to_sql> on 2023-01-01 00:00:00+00:00
+[2026-02-09T23:42:34.257+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'temperature_etl_to_postgres', 'transform_and_save_to_sql', 'scheduled__2023-01-01T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/temperature_etl.py', '--cfg-path', '/tmp/tmpf1ngc3nq']
+[2026-02-09T23:42:34.262+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=79) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-09T23:42:34.264+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask transform_and_save_to_sql
+[2026-02-09T23:42:34.264+0000] {standard_task_runner.py:64} INFO - Started process 96 to run task
+[2026-02-09T23:42:34.417+0000] {task_command.py:426} INFO - Running <TaskInstance: temperature_etl_to_postgres.transform_and_save_to_sql scheduled__2023-01-01T00:00:00+00:00 [running]> on host ffb9487abbe3
+[2026-02-09T23:42:34.569+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='temperature_etl_to_postgres' AIRFLOW_CTX_TASK_ID='transform_and_save_to_sql' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:00:00+00:00'
+[2026-02-09T23:42:34.572+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-09T23:42:35.075+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-09T23:42:35.076+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  database "weather_data" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/temperature_etl.py", line 37, in transform_and_save_to_sql
+    df.to_sql('filtered_temperature', con=engine, if_exists='replace', index=False)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/generic.py", line 3008, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 787, in to_sql
+    with pandasSQL_builder(con, schema=schema, need_transaction=True) as pandas_sql:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 851, in pandasSQL_builder
+    return SQLDatabase(con, schema, need_transaction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 1576, in __init__
+    con = self.exit_stack.enter_context(con.connect())
+                                        ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  database "weather_data" does not exist
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-09T23:42:35.095+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=temperature_etl_to_postgres, task_id=transform_and_save_to_sql, run_id=scheduled__2023-01-01T00:00:00+00:00, execution_date=20230101T000000, start_date=20260209T234234, end_date=20260209T234235
+[2026-02-09T23:42:35.107+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 4 for task transform_and_save_to_sql ((psycopg2.OperationalError) connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  database "weather_data" does not exist
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 96)
+[2026-02-09T23:42:35.124+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-09T23:42:35.140+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-09T23:42:35.142+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-09T23:45:34.799+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-09T23:45:34.828+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: temperature_etl_to_postgres.transform_and_save_to_sql scheduled__2023-01-01T00:00:00+00:00 [queued]>
+[2026-02-09T23:45:34.835+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: temperature_etl_to_postgres.transform_and_save_to_sql scheduled__2023-01-01T00:00:00+00:00 [queued]>
+[2026-02-09T23:45:34.835+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-02-09T23:45:34.849+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_and_save_to_sql> on 2023-01-01 00:00:00+00:00
+[2026-02-09T23:45:34.864+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'temperature_etl_to_postgres', 'transform_and_save_to_sql', 'scheduled__2023-01-01T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/temperature_etl.py', '--cfg-path', '/tmp/tmpywyytx0j']
+[2026-02-09T23:45:34.869+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=145) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-09T23:45:34.871+0000] {standard_task_runner.py:91} INFO - Job 7: Subtask transform_and_save_to_sql
+[2026-02-09T23:45:34.872+0000] {standard_task_runner.py:64} INFO - Started process 162 to run task
+[2026-02-09T23:45:35.057+0000] {task_command.py:426} INFO - Running <TaskInstance: temperature_etl_to_postgres.transform_and_save_to_sql scheduled__2023-01-01T00:00:00+00:00 [running]> on host ffb9487abbe3
+[2026-02-09T23:45:35.166+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='temperature_etl_to_postgres' AIRFLOW_CTX_TASK_ID='transform_and_save_to_sql' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:00:00+00:00'
+[2026-02-09T23:45:35.167+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-09T23:45:36.657+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-09T23:45:36.658+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-09T23:45:36.670+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=temperature_etl_to_postgres, task_id=transform_and_save_to_sql, run_id=scheduled__2023-01-01T00:00:00+00:00, execution_date=20230101T000000, start_date=20260209T234534, end_date=20260209T234536
+[2026-02-09T23:45:36.738+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-09T23:45:36.759+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-09T23:45:36.763+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

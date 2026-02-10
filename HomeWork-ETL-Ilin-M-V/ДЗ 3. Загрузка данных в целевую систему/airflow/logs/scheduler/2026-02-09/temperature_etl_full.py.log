@@ -1,0 +1,207 @@
+[2026-02-09T23:52:13.836+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:52:13.837+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:52:13.838+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:52:13.838+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:52:14.089+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:52:14.533+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:52:14.532+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:temperature_etl_full_load
+[2026-02-09T23:52:14.542+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:52:14.542+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:temperature_etl_full_load
+[2026-02-09T23:52:14.548+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:52:14.548+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:temperature_etl_full_load
+[2026-02-09T23:52:14.549+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:52:14.548+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:52:14.569+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:52:14.569+0000] {dag.py:3111} INFO - Creating ORM DAG for temperature_etl_full_load
+[2026-02-09T23:52:14.586+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:52:14.586+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load to 2023-01-01 00:00:00+00:00, run_after=2023-02-01 00:00:00+00:00
+[2026-02-09T23:52:14.606+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.775 seconds
+[2026-02-09T23:52:44.897+0000] {processor.py:161} INFO - Started process (PID=304) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:52:44.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:52:44.899+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:52:44.899+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:52:45.358+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:52:45.395+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:52:45.394+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:52:45.423+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:52:45.422+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load to 2023-05-01 00:00:00+00:00, run_after=2023-06-01 00:00:00+00:00
+[2026-02-09T23:52:45.446+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.556 seconds
+[2026-02-09T23:53:15.712+0000] {processor.py:161} INFO - Started process (PID=434) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:53:15.713+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:53:15.713+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:53:15.713+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:53:15.958+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:53:15.984+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:53:15.984+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:53:16.004+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:53:16.004+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load to 2023-12-01 00:00:00+00:00, run_after=2024-01-01 00:00:00+00:00
+[2026-02-09T23:53:16.028+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.322 seconds
+[2026-02-09T23:53:46.318+0000] {processor.py:161} INFO - Started process (PID=551) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:53:46.319+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:53:46.321+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:53:46.320+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:53:46.629+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:53:46.659+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:53:46.658+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:53:46.682+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:53:46.681+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load to 2024-07-01 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2026-02-09T23:53:46.705+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.394 seconds
+[2026-02-09T23:54:16.968+0000] {processor.py:161} INFO - Started process (PID=664) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:54:16.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:54:16.971+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:54:16.970+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:54:17.227+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:54:17.251+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:54:17.250+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:54:17.425+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:54:17.425+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2026-02-09T23:54:17.440+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.479 seconds
+[2026-02-09T23:54:47.760+0000] {processor.py:161} INFO - Started process (PID=670) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:54:47.761+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:54:47.762+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:54:47.762+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:54:48.039+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:54:48.066+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:54:48.066+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:54:48.283+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:54:48.283+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2026-02-09T23:54:48.302+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.548 seconds
+[2026-02-09T23:55:18.565+0000] {processor.py:161} INFO - Started process (PID=749) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:55:18.567+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:55:18.567+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:55:18.567+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:55:18.828+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:55:18.856+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:55:18.855+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:55:18.875+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:55:18.875+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load to 2025-02-01 00:00:00+00:00, run_after=2025-03-01 00:00:00+00:00
+[2026-02-09T23:55:18.892+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.332 seconds
+[2026-02-09T23:55:49.154+0000] {processor.py:161} INFO - Started process (PID=881) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:55:49.155+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:55:49.156+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:55:49.155+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:55:49.418+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:55:49.441+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:55:49.441+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:55:49.464+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:55:49.463+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load to 2025-09-01 00:00:00+00:00, run_after=2025-10-01 00:00:00+00:00
+[2026-02-09T23:55:49.482+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.334 seconds
+[2026-02-09T23:56:19.727+0000] {processor.py:161} INFO - Started process (PID=994) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:56:19.728+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:56:19.728+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:56:19.728+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:56:19.988+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:56:20.014+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:56:20.013+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:56:20.030+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:56:20.030+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load to 2026-02-01 00:00:00+00:00, run_after=2026-03-01 00:00:00+00:00
+[2026-02-09T23:56:20.046+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.325 seconds
+[2026-02-09T23:56:50.335+0000] {processor.py:161} INFO - Started process (PID=1000) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:56:50.336+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:56:50.337+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:56:50.337+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:56:50.660+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:56:50.689+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:56:50.688+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:56:50.707+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:56:50.707+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load to 2026-02-01 00:00:00+00:00, run_after=2026-03-01 00:00:00+00:00
+[2026-02-09T23:56:50.894+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.566 seconds
+[2026-02-09T23:57:02.902+0000] {processor.py:161} INFO - Started process (PID=34) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:02.904+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:57:02.907+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:02.907+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:03.284+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:03.320+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:03.320+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:57:03.337+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:03.337+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load to 2026-02-01 00:00:00+00:00, run_after=2026-03-01 00:00:00+00:00
+[2026-02-09T23:57:03.353+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.459 seconds
+[2026-02-09T23:57:19.024+0000] {processor.py:161} INFO - Started process (PID=39) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:19.026+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:57:19.032+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:19.031+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:19.600+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load_fixed' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:19.746+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:19.745+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:temperature_etl_full_load_fixed
+[2026-02-09T23:57:19.763+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:19.763+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:temperature_etl_full_load_fixed
+[2026-02-09T23:57:19.984+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:19.983+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:temperature_etl_full_load_fixed
+[2026-02-09T23:57:19.984+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:19.984+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:57:19.994+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:19.994+0000] {dag.py:3111} INFO - Creating ORM DAG for temperature_etl_full_load_fixed
+[2026-02-09T23:57:20.002+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:20.002+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load_fixed to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:00:00+00:00
+[2026-02-09T23:57:20.023+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 1.009 seconds
+[2026-02-09T23:57:22.064+0000] {processor.py:161} INFO - Started process (PID=41) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:22.065+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:57:22.068+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:22.067+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:22.343+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load_fixed' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:22.359+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:22.358+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:57:22.380+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:22.380+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load_fixed to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:00:00+00:00
+[2026-02-09T23:57:22.403+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.344 seconds
+[2026-02-09T23:57:23.124+0000] {processor.py:161} INFO - Started process (PID=43) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:23.126+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:57:23.128+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:23.128+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:23.369+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load_fixed' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:23.388+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:23.387+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:57:23.412+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:23.411+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load_fixed to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:00:00+00:00
+[2026-02-09T23:57:23.435+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.316 seconds
+[2026-02-09T23:57:25.527+0000] {processor.py:161} INFO - Started process (PID=45) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:25.528+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:57:25.530+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:25.530+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:25.550+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:25.548+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/temperature_etl_full.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temperature_etl_full.py", line 41
+    description='Полная загрузка,
+                ^
+SyntaxError: unterminated string literal (detected at line 41)
+[2026-02-09T23:57:25.551+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:25.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.055 seconds
+[2026-02-09T23:57:29.608+0000] {processor.py:161} INFO - Started process (PID=46) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:29.610+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:57:29.612+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:29.612+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:29.629+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:29.628+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/temperature_etl_full.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temperature_etl_full.py", line 41
+    description='Полная загрузкаЭ,
+                ^
+SyntaxError: unterminated string literal (detected at line 41)
+[2026-02-09T23:57:29.630+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:29.653+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.051 seconds
+[2026-02-09T23:57:30.676+0000] {processor.py:161} INFO - Started process (PID=47) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:30.677+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:57:30.679+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:30.679+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:30.696+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:30.695+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/temperature_etl_full.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temperature_etl_full.py", line 41
+    description='Полная загрузка",
+                ^
+SyntaxError: unterminated string literal (detected at line 41)
+[2026-02-09T23:57:30.696+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:30.719+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.048 seconds
+[2026-02-09T23:57:35.145+0000] {processor.py:161} INFO - Started process (PID=52) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:35.148+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:57:35.150+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:35.150+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:35.442+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load_fixed' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:35.455+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:35.455+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:57:35.474+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:35.474+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load_fixed to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:00:00+00:00
+[2026-02-09T23:57:35.499+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.359 seconds
+[2026-02-09T23:57:37.518+0000] {processor.py:161} INFO - Started process (PID=54) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:37.519+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:57:37.522+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:37.521+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:37.785+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load_fixed' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:57:37.798+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:37.798+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:57:37.817+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:57:37.816+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load_fixed to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:00:00+00:00
+[2026-02-09T23:57:37.838+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.326 seconds
+[2026-02-09T23:58:07.891+0000] {processor.py:161} INFO - Started process (PID=70) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:58:07.892+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:58:07.895+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:58:07.894+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:58:08.142+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load_fixed' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:58:08.384+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:58:08.383+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:58:08.396+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:58:08.396+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load_fixed to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:00:00+00:00
+[2026-02-09T23:58:08.409+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.526 seconds
+[2026-02-09T23:58:38.698+0000] {processor.py:161} INFO - Started process (PID=76) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:58:38.699+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:58:38.701+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:58:38.701+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:58:38.932+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load_fixed' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:58:38.955+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:58:38.954+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:58:38.972+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:58:38.972+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load_fixed to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:00:00+00:00
+[2026-02-09T23:58:38.991+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.299 seconds
+[2026-02-09T23:58:57.675+0000] {processor.py:161} INFO - Started process (PID=80) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:58:57.677+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:58:57.680+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:58:57.679+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:58:58.042+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:58:58.141+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:58:58.141+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:58:58.152+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:58:58.151+0000] {dag.py:3111} INFO - Creating ORM DAG for temperature_etl_full_load
+[2026-02-09T23:58:58.340+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:58:58.339+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:00:00+00:00
+[2026-02-09T23:58:58.360+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.692 seconds
+[2026-02-09T23:59:28.744+0000] {processor.py:161} INFO - Started process (PID=140) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:59:28.746+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:59:28.748+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:59:28.747+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:59:29.005+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:59:29.034+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:59:29.034+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:59:29.051+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:59:29.050+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load to None, run_after=None
+[2026-02-09T23:59:29.070+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.333 seconds
+[2026-02-09T23:59:59.524+0000] {processor.py:161} INFO - Started process (PID=164) to work on /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:59:59.526+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/temperature_etl_full.py for tasks to queue
+[2026-02-09T23:59:59.528+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:59:59.528+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:59:59.803+0000] {processor.py:840} INFO - DAG(s) 'temperature_etl_full_load' retrieved from /opt/airflow/dags/temperature_etl_full.py
+[2026-02-09T23:59:59.832+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:59:59.832+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-02-09T23:59:59.851+0000] {logging_mixin.py:188} INFO - [2026-02-09T23:59:59.851+0000] {dag.py:3947} INFO - Setting next_dagrun for temperature_etl_full_load to None, run_after=None
+[2026-02-09T23:59:59.870+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/temperature_etl_full.py took 0.352 seconds

@@ -1,0 +1,2 @@
+CREATE DATABASE weather_data;
+GRANT ALL PRIVILEGES ON DATABASE weather_data TO airflow;
